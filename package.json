@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "The first Blog from Aldina",
+  "author": "Mahir Karadza",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-modernizr": "^1.0.2",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
