@@ -10,7 +10,7 @@ html, body {
   box-sizing: border-box;
 }
 
-.header {
+header {
   position: relative;
   width: 100%;
   height: 100%;
@@ -27,35 +27,65 @@ html, body {
   border-radius: 7px;
   box-shadow: 2px 2px 15px 2px grey;
 }
-.headerWrapper nav {
-  height: 80px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: pink;
-  opacity: 0.5;
-  -webkit-transition: height 0.8s ease;
-  transition: height 0.8s ease;
+.headerWrapper #headerNote {
+  display: block;
+  min-height: 150px;
+  padding: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 7px;
+  background-color: lightgray;
+  box-shadow: 2px 2px 15px 2px gray inset;
 }
-.headerWrapper nav.small {
-  height: 40px;
+.headerWrapper #headerNote p {
+  font-family: "La Belle Aurore", "Merienda One", "The Girl Next Door";
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  display: none;
 }
 .headerWrapper #headerPic {
-  float: right;
-  margin-top: 10%;
-  margin-right: 20px;
+  width: 100%;
   height: auto;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  left: 10px;
+  margin: 50px auto 0 auto;
+  display: block;
 }
 @media only screen and (min-width: 1440px) {
+  .headerWrapper .headerWrapper {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 0;
+    background-color: #0EA35D;
+    border-radius: 7px;
+    box-shadow: 2px 2px 15px 2px grey;
+  }
+  .headerWrapper #headerPic {
+    width: 650px;
+    height: 600px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 55%;
+  }
   .headerWrapper #headerNote {
     width: 500px;
-    height: 200px;
+    min-height: 200px;
     position: absolute;
     top: 20%;
     left: 60px;
     float: left;
     text-align: left;
+    background-color: #0EA35D;
   }
   .headerWrapper #headerNote p {
     font-family: "La Belle Aurore", "Merienda One", "The Girl Next Door";
@@ -118,14 +148,14 @@ html, body {
   margin: 15px 15px 15px 15px;
 }
 
-.footer {
+footer {
   width: 100%;
   height: 300px;
   padding: 0;
   margin: 0;
   position: relative;
 }
-.footer footer {
+footer .footerWrapper {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -137,25 +167,25 @@ html, body {
   border-radius: 7px;
   box-shadow: 2px 2px 15px 2px grey;
 }
-.footer footer img {
+footer .footerWrapper img {
   max-width: 300px;
   max-height: 150px;
   display: block;
   margin: 50px auto 0 auto;
 }
-.footer footer div {
+footer .footerWrapper div {
   width: 100%;
   height: 30px;
   position: absolute;
   bottom: 15px;
 }
-.footer footer div p {
+footer .footerWrapper div p {
   margin: 0;
   font-family: "Audiowide";
   font-size: 23px;
   text-align: center;
 }
-.footer footer div p span {
+footer .footerWrapper div p span {
   font-family: "VT323";
   font-size: 26px;
   font-weight: bold;
