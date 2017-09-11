@@ -29,7 +29,7 @@ header {
 }
 .headerWrapper #headerNote {
   display: block;
-  min-height: 150px;
+  min-height: 100px;
   padding: 20px;
   position: absolute;
   right: 10px;
@@ -50,13 +50,13 @@ header {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 10px;
   left: 10px;
   margin: 50px auto 0 auto;
   display: block;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .headerWrapper .headerWrapper {
     position: absolute;
     top: 15px;
@@ -69,23 +69,23 @@ header {
     box-shadow: 2px 2px 15px 2px grey;
   }
   .headerWrapper #headerPic {
-    width: 650px;
-    height: 600px;
+    max-width: 50%;
+    height: auto;
     position: absolute;
-    top: 5%;
-    right: 5%;
-    bottom: 5%;
-    left: 55%;
+    top: 10%;
+    right: 20px;
+    left: 45%;
   }
   .headerWrapper #headerNote {
     width: 500px;
-    min-height: 200px;
+    height: 300px;
     position: absolute;
     top: 20%;
     left: 60px;
     float: left;
     text-align: left;
     background-color: #0EA35D;
+    box-shadow: none;
   }
   .headerWrapper #headerNote p {
     font-family: "La Belle Aurore", "Merienda One", "The Girl Next Door";
